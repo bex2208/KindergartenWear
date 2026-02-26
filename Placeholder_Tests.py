@@ -1,7 +1,3 @@
-# ===== Install required libraries =====
-!pip install requests
-!pip install -q google-genai
-!pip install python-telegram-bot==13.15 --quiet
 
 # ===== Imports =====
 import requests
