@@ -49,11 +49,11 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 response = client.models.generate_content(
     model="gemini-2.5-flash",
     contents=(
-        f"3-year-old at kindergarten 8–14h. Weather: {summary}. "
-        "Suggest practical clothing in detail: Should they wear long or short sleeves, "
-        "how many layers, fleece jacket too? Winter jacket or light jacket, rain jacket, "
-        "warm leggings underneath or just sweatpants, hat needed, etc. "
-        "They go outside twice a day and are indoors otherwise."
+        f"3-year-old child at kindergarten from 8–14h. Weather forecast: {summary}. "
+        "In 3–4 sentences, give concise practical clothing advice for the day: "
+        "Specify sleeve length, number of layers, type of jacket (winter/light/rain), "
+        "warm leggings or pants, and whether a hat is needed. Advice should be easy to follow "
+        "and actionable, not a long paragraph."
     )
 )
 advice = response.text
