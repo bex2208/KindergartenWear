@@ -45,14 +45,14 @@ summary = f"Weather summary for 8am–2pm:\n" \
           f"- Conditions: {', '.join(h['desc'] for h in hourly_data)}"
 
 # ===== Gemini placeholder =====
-# client = genai.Client(api_key=GEMINI_API_KEY)
-# response = client.models.generate_content(
-#     model="gemini-2.5-flash",
-#     contents=f"3-year-old at kindergarten 8–14h. Weather: {summary}. Suggest practical clothing ("
-# )
-# advice = response.text
+ client = genai.Client(api_key=GEMINI_API_KEY)
+ response = client.models.generate_content(
+     model="gemini-2.5-flash",
+     contents=f"3-year-old at kindergarten 8–14h. Weather: {summary}. Suggest practical clothing ("
+ )
+ advice = response.text
 
-advice = "Jacket and waterproof boots. Maybe a hat if it rains."
+# advice = "Jacket and waterproof boots. Maybe a hat if it rains." <--- placeholder for testing
 
 # ===== Telegram Bot =====
 bot = Bot(token=bot_token)
