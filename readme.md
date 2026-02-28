@@ -1,6 +1,6 @@
 # Kindergarten Wear Bot
 
-A simple Python Telegram bot that provides daily clothing advice for a 3-year-old based on the weather in **Ubstadt-Weiher**. 
+An AI-powered Telegram bot that provides daily clothing advice for a 3-year-old based on the weather in **Ubstadt-Weiher**. 
 
 ---
 
